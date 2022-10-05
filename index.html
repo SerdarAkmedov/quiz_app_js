@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button
+      class="btn btn-primary w-25 h-25 fw-bold fs-1 start_btn"
+    >
+      Let's Start!
+    </button>
+
+    <div class="container h-100 quiz_container visually-hidden">
+      <div class="card w-50 h-50">
+        <h3 class="card-header text-center"></h3>
+        <div class="card-body h-100">
+        </div>
+        <div class="card-footer h-25 d-flex align-items-center justify-content-around">
+          <h3 class="score"><span>Score: </span><span class="score1"></span></h3>
+          <button class="btn btn-primary next_btn">Next question=></button>
+        </div>
+      </div>
+    </div>
+    <div class="result-box container bg-success visually-hidden w-25 h-25 text-white rounded">
+        <h4>Your result: <span class="result-span"></span></h4>
+        <h3>Good!</h3>
+        <button class="btn btn-primary restart_btn ">Restart</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./questions.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
